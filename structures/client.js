@@ -19,6 +19,7 @@ module.exports = class client{
     this.rest = new REST({ version: '9' }).setToken(this.Token);
     this.routes = Routes;
     this.commandManager = new cmdManager(this);
+    this.messageEmbed = require("./messageEmbed.js");
     return ee(this);
     // return this
   }
